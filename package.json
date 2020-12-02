@@ -8,5 +8,8 @@
     "build:dev": "sass --watch ./assets/styles/style.scss:./public/dist/style.css --style expanded"
   },
   "author": "douglas.meunier@codbear.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
 }
