@@ -1,0 +1,12 @@
+{
+  "name": "douglas-meunier_3_18112020",
+  "version": "1.0.0",
+  "description": "Project 3 of Front End developer path at OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "sass ./assets/styles/style.scss:./public/dist/style.css --style compressed",
+    "build:dev": "sass --watch ./assets/styles/style.scss:./public/dist/style.css --style expanded"
+  },
+  "author": "douglas.meunier@codbear.com",
+  "license": "ISC"
+}
