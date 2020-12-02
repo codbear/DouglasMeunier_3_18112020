@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+@mixin font_robot {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin font_shrikhand {
+  font-family: 'Shrikhand', cursive;
+}
