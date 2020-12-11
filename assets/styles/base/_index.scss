@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  @include font_robot;
   margin: 0;
   padding: 0;
 }
