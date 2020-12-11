@@ -1,0 +1,8 @@
+.heading {
+  @include font_shrikhand;
+  color: $color_text_default;
+  margin: 0;
+  &--1 {
+    font-size: 8rem;
+  }
+}
