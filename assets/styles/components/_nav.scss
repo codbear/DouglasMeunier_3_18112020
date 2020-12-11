@@ -1,0 +1,39 @@
+@mixin list-style-image($image) {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  background-image: url("../../assets/svg/#{$image}.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: spacing(.5);
+      }
+
+      &:nth-child(1):before {
+        @include list-style-image(utensils);
+      }
+
+      &:nth-child(2):before {
+        @include list-style-image(hands-helping);
+      }
+    }
+  }
+
+  .nav-link {
+    text-decoration: none;
+
+    &--on-dark-background {
+      color: $color_text_onDarkBackground;
+    }
+  }
+}
