@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  cursor: pointer;
+  &--action {
+    font-size: sizing(M);
+    background: linear-gradient($color_secondary, $color_primary);
+    padding: spacing(2, 3);
+    color: $color_text_onPrimaryBackground;
+    border-radius: 55px;
+    @include elevate(2);
+    transition: all .2s ease-in-out;
+    &:hover {
+      background: linear-gradient(lighten($color_secondary, 5%), lighten($color_primary, 5%));
+      @include elevate(3);
+    }
+  }
+}
