@@ -1,3 +1,25 @@
-@function spacing($multiplier) {
-  @return #{$multiplier * 8}px;
+@function getSizeInPixel($spaces) {
+  $sizes: ();
+  $separator: list-separator($spaces);
+
+  @each $space in $spaces {
+
+    @if ($space) {
+
+      @if ($space > 0) {
+        $size: #{$space * 8}px;
+        $sizes: append($sizes, $size, $separator);
+      } @else if ($space == 0) {
+        $sizes: append($sizes, $space, $separator);
+      }
+    }
+  }
+
+  @return $sizes;
+}
+
+@function spacing($top, $right:false, $bottom:false, $left:false) {
+  $spaces: $top $right $bottom $left;
+
+  @return getSizeInPixel($spaces);
 }
