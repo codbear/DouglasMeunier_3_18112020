@@ -3,7 +3,7 @@
   display: inline-block;
   width: 16px;
   height: 11px;
-  background-image: url("../../assets/svg/#{$image}.svg");
+  background-image: url("#{$pathToSvg}/#{$image}.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
