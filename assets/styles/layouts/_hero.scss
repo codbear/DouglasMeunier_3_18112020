@@ -1,0 +1,9 @@
+.hero {
+  width: 100%;
+  padding: spacing(4, 3, 5, 3);
+  background-color: $color_background_alternative;
+  text-align: center;
+  .button {
+    margin-top: spacing(2);
+  }
+}
