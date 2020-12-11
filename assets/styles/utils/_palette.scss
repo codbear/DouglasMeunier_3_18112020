@@ -24,6 +24,7 @@ $color_background_contrasted: $_color_opaline;
 $color_shadow: $_color_hash;
 
 $color_text_default: $_color_black;
+$color_text_alternative: $_color_hash;
 $color_text_onDarkBackground: $_color_white;
 $color_text_onPrimaryBackground: $_color_white;
 $color_text_onContrasted: darken($_color_opaline, 40%);

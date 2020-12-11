@@ -1,9 +1,9 @@
 .button {
   border: none;
   cursor: pointer;
+  font-size: sizing(M);
 
   &--action {
-    font-size: sizing(M);
     background: linear-gradient($color_secondary, $color_primary);
     padding: spacing(2, 3);
     color: $color_text_onPrimaryBackground;
