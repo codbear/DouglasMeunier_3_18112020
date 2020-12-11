@@ -1,7 +1,7 @@
 .location {
   width: 100%;
-  font-size: 3.5rem;
-  text-align: center;
-  padding: spacing(3);
+  padding: spacing(2);
   background-color: $color_background_locationHeader;
+  text-align: center;
+  font-size: sizing(M);
 }
