@@ -17,3 +17,12 @@ a {
   color: $color_text_default;
   text-decoration: none;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: duration(reduced) !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: duration(reduced) !important;
+    scroll-behavior: auto !important;
+  }
+}

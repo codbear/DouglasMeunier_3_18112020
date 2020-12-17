@@ -9,7 +9,6 @@
     padding: spacing(2, 3);
     color: $color_text_onPrimaryBackground;
     border-radius: 55px;
-    transition: all .2s ease-in-out;
 
     &:hover {
       background: linear-gradient(lighten($color_secondary, 5%), lighten($color_primary, 5%));

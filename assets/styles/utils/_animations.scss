@@ -1,21 +1,38 @@
-@function getTime($duration) {
+@function duration($duration) {
   $durations: (
+          reduced: 10ms,
           shortest: 150ms,
           shorter: 200ms,
           short: 250ms,
           basic: 300ms,
-          complex: 375ms
+          complex: 375ms,
   );
 
   @return map-get($durations, $duration);
 }
 
-@function fillWithGradient($duration) {
-  @return fillWithGradient getTime($duration) ease-in forwards;
+@function fillWithGradient($duration: 'basic') {
+  @return fillWithGradient duration($duration) ease-in forwards;
 }
 
-@mixin hideOnClick($duration) {
-  transition: opacity getTime($duration) ease-in;
+@function elevate($duration: 'basic') {
+  @return box-shadow duration($duration) ease-in-out;
+}
+
+@function easeIn($duration: 'basic') {
+  @return all duration($duration) ease-in;
+}
+
+@function easeOut($duration: 'basic') {
+  @return all duration($duration) ease-out;
+}
+
+@function easeInOut($duration: 'basic') {
+  @return all duration($duration) ease-in-out;
+}
+
+@mixin hideOnClick($duration: 'basic') {
+  transition: opacity duration($duration) ease-in;
 
   &:active {
     opacity: 0;

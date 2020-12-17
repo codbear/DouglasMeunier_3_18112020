@@ -8,8 +8,10 @@
   &:hover {
     cursor: pointer;
 
-    img {
-      transform: scale(1.03);
+    @media (prefers-reduced-motion: no-preference) {
+      img {
+        transform: scale(1.03);
+      }
     }
   }
 
@@ -26,7 +28,7 @@
       height: 170px;
       object-fit: cover;
       object-position: bottom center;
-      transition: all .5s ease-out;
+      transition: easeOut('complex');
     }
   }
 
