@@ -1,0 +1,38 @@
+@mixin favButtonSize {
+  width: 25px;
+  height: 25px;
+}
+
+@mixin favButtonElementsPosition {
+  @include favButtonSize;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fav-button {
+  @include favButtonSize;
+  position: relative;
+
+  &::before {
+    @include favButtonElementsPosition;
+    content: "";
+    background-color: $color_background_paper;
+  }
+
+  &:active {
+    &::before {
+      animation: fillWithGradient('short');
+    }
+  }
+
+  &_negative {
+    @include favButtonElementsPosition;
+    fill: $color_background_paper;
+  }
+
+  &_border {
+    @include favButtonElementsPosition;
+    @include hideOnClick('shorter');
+  }
+}

@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -8,7 +10,10 @@ html {
 
 body {
   @include font_robot;
-  margin: 0;
-  padding: 0;
   font-size: sizing(M);
+}
+
+a {
+  color: $color_text_default;
+  text-decoration: none;
 }

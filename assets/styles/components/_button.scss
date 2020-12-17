@@ -2,9 +2,9 @@
   border: none;
   cursor: pointer;
   font-size: sizing(M);
-  @include elevation();
 
   &--action {
+    @include elevation();
     background: linear-gradient($color_secondary, $color_primary);
     padding: spacing(2, 3);
     color: $color_text_onPrimaryBackground;

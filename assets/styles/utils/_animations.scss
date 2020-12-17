@@ -1,0 +1,39 @@
+@function getTime($duration) {
+  $durations: (
+          shortest: 150ms,
+          shorter: 200ms,
+          short: 250ms,
+          basic: 300ms,
+          complex: 375ms
+  );
+
+  @return map-get($durations, $duration);
+}
+
+@function fillWithGradient($duration) {
+  @return fillWithGradient getTime($duration) ease-in forwards;
+}
+
+@mixin hideOnClick($duration) {
+  transition: opacity getTime($duration) ease-in;
+
+  &:active {
+    opacity: 0;
+  }
+}
+
+@keyframes fillWithGradient {
+  0% {
+    box-shadow: 0 0 0 0 $color_background_paper inset;
+  }
+
+  50% {
+    background-color: #fff;
+    box-shadow: 0 35px 25px -30px $color_primary inset;
+  }
+
+  100% {
+    background-color: $color_secondary;
+    box-shadow: 0 50px 25px -30px $color_primary inset;
+  }
+}
