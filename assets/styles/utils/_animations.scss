@@ -11,7 +11,7 @@
   @return map-get($durations, $duration);
 }
 
-@function displayContent($duration: 'reduced') {
+@function displayContent($duration: 'basic') {
   @return duration($duration) ease-out 3s forwards displayContent;
 }
 
@@ -58,10 +58,12 @@
 @keyframes displayContent {
   from {
     opacity: 1;
+    pointer-events: auto;
   }
 
   to {
     opacity: 0;
+    pointer-events: none;
   }
 }
 
