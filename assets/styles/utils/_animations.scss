@@ -11,6 +11,10 @@
   @return map-get($durations, $duration);
 }
 
+@function displayContent($duration: 'reduced') {
+  @return duration($duration) ease-out 3s forwards displayContent;
+}
+
 @function fillWithGradient($duration: 'basic') {
   @return fillWithGradient duration($duration) ease-in forwards;
 }
@@ -39,6 +43,28 @@
   }
 }
 
+@mixin spin-loader($period: 3) {
+  animation: spin #{$period / 3}s linear infinite;
+
+  &:before {
+    animation: spin #{$period / 2}s linear infinite;
+  }
+
+  &:after {
+    animation: spin #{$period}s linear infinite;
+  }
+}
+
+@keyframes displayContent {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes fillWithGradient {
   0% {
     box-shadow: 0 0 0 0 $color_background_paper inset;
@@ -52,5 +78,15 @@
   100% {
     background-color: $color_secondary;
     box-shadow: 0 50px 25px -30px $color_primary inset;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
