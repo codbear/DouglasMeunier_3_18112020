@@ -1,0 +1,14 @@
+.heading {
+  color: $color_text_default;
+  margin: 0;
+
+  &--1 {
+    @include font_shrikhand;
+    font-size: sizing(XL);
+  }
+
+  &--2 {
+    font-size: sizing(L);
+    font-weight: bold;
+  }
+}

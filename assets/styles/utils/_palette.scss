@@ -1,0 +1,33 @@
+// Base colors
+$_color_amethyst: #9356dc;
+$_color_orchid: #ff79da;
+$_color_opaline: #99E2D0;
+$_color_white: #ffffff;
+$_color_whiteSmoke: #fafafa;
+$_color_smoke: #e9e9e9;
+$_color_hash: #aaaaaa;
+$_color_coal: #333333;
+$_color_black: rgba(0, 0, 0, .92);
+
+// Semantic colors
+$color_primary: $_color_amethyst;
+$color_secondary: $_color_orchid;
+$color_contrasted: $_color_opaline;
+
+$color_background_default: $_color_white;
+$color_background_alternative: $_color_whiteSmoke;
+$color_background_dark: $_color_coal;
+$color_background_locationHeader: $_color_smoke;
+$color_background_primary: $_color_amethyst;
+$color_background_contrasted: $_color_opaline;
+$color_background_paper: $_color_white;
+
+$color_shadow: $_color_hash;
+
+$color_text_default: $_color_black;
+$color_text_alternative: $_color_hash;
+$color_text_onDarkBackground: $_color_white;
+$color_text_onPrimaryBackground: $_color_white;
+$color_text_onContrasted: darken($_color_opaline, 40%);
+
+$color_divider_contrasted: $_color_opaline;

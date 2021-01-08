@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include font_robot;
+  font-size: sizing(M);
+}
+
+a {
+  color: $color_text_default;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: duration(reduced) !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: duration(reduced) !important;
+    scroll-behavior: auto !important;
+  }
+}

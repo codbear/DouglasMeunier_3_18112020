@@ -1,0 +1,48 @@
+@mixin loader-borders($color: $color_primary) {
+  border: 5px solid transparent;
+  border-top-color: $color;
+  border-radius: 50%;
+}
+
+.content_loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  background-color: $color_background_paper;
+  z-index: 50;
+
+  .loader {
+    @include loader-borders();
+    @include spin-loader();
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+
+    &:after {
+      @include loader-borders();
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      content: '';
+    }
+
+    &:before {
+      @include loader-borders($color_contrasted);
+      position: absolute;
+      top: 22px;
+      bottom: 22px;
+      left: 22px;
+      right: 22px;
+      content: '';
+    }
+  }
+}

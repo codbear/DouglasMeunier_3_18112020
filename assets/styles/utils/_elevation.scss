@@ -1,0 +1,14 @@
+@mixin elevation($elevateOnHover : true) {
+  box-shadow: 0px 2px 1px -1px $color_shadow,
+  0px 1px 1px 0px $color_shadow,
+  0px 1px 3px 0px $color_shadow;
+  transition: elevate();
+
+  @if ($elevateOnHover) {
+    &:hover {
+      box-shadow: 0px 3px 5px -1px $color_shadow,
+      0px 6px 10px 0px $color_shadow,
+      0px 1px 18px 0px $color_shadow;
+    }
+  }
+}

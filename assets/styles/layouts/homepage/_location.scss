@@ -1,0 +1,22 @@
+.location {
+  width: 100%;
+  padding: spacing(2);
+  background-color: $color_background_locationHeader;
+  text-align: center;
+  font-size: sizing(M);
+
+  p {
+    margin: 0;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 16px;
+      margin-right: spacing(2);
+      background-image: url("#{$pathToSvg}/map-marker-alt.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

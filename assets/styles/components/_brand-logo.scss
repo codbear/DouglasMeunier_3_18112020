@@ -1,0 +1,8 @@
+.brand-logo {
+  width: 10rem;
+  margin-bottom: spacing(2);
+
+  &--on-dark-background {
+    fill: $color_text_onDarkBackground;
+  }
+}

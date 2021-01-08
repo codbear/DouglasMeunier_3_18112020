@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  cursor: pointer;
+  font-size: sizing(M);
+
+  &--action {
+    @include elevation();
+    background: linear-gradient($color_secondary, $color_primary);
+    padding: spacing(2, 3);
+    color: $color_text_onPrimaryBackground;
+    border-radius: 55px;
+
+    &:hover {
+      background: linear-gradient(lighten($color_secondary, 5%), lighten($color_primary, 5%));
+    }
+  }
+}

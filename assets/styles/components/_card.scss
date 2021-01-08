@@ -1,0 +1,50 @@
+.card {
+  @include elevation();
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: $color_background_paper;
+
+  &:hover {
+    cursor: pointer;
+
+    @media (prefers-reduced-motion: no-preference) {
+      img {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  &--new {
+    @include createBadge('Nouveau');
+  }
+
+  .card_image {
+    height: 170px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      object-position: bottom center;
+      transition: easeOut('complex');
+    }
+  }
+
+  .card_content {
+    padding: spacing(2);
+
+    .heading--3 {
+      margin-bottom: spacing(.5);
+    }
+  }
+
+  .fav-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: spacing(2);
+  }
+}

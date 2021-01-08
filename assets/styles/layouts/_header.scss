@@ -1,0 +1,9 @@
+.header {
+  position: relative;
+  z-index: 1;
+  @include elevation(false);
+  width: 100%;
+  height: auto;
+  padding: spacing(2, 0, 1, 0);
+  text-align: center;
+}

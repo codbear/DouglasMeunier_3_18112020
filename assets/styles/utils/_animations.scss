@@ -1,0 +1,94 @@
+@function duration($duration) {
+  $durations: (
+          reduced: 10ms,
+          shortest: 150ms,
+          shorter: 200ms,
+          short: 250ms,
+          basic: 300ms,
+          complex: 375ms,
+  );
+
+  @return map-get($durations, $duration);
+}
+
+@function displayContent($duration: 'basic') {
+  @return duration($duration) ease-out 3s forwards displayContent;
+}
+
+@function fillWithGradient($duration: 'basic') {
+  @return fillWithGradient duration($duration) ease-in forwards;
+}
+
+@function elevate($duration: 'basic') {
+  @return box-shadow duration($duration) ease-in-out;
+}
+
+@function easeIn($duration: 'basic') {
+  @return all duration($duration) ease-in;
+}
+
+@function easeOut($duration: 'basic') {
+  @return all duration($duration) ease-out;
+}
+
+@function easeInOut($duration: 'basic') {
+  @return all duration($duration) ease-in-out;
+}
+
+@mixin hideOnClick($duration: 'basic') {
+  transition: opacity duration($duration) ease-in;
+
+  &:active {
+    opacity: 0;
+  }
+}
+
+@mixin spin-loader($period: 3) {
+  animation: spin #{$period / 3}s linear infinite;
+
+  &:before {
+    animation: spin #{$period / 2}s linear infinite;
+  }
+
+  &:after {
+    animation: spin #{$period}s linear infinite;
+  }
+}
+
+@keyframes displayContent {
+  from {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes fillWithGradient {
+  0% {
+    box-shadow: 0 0 0 0 $color_background_paper inset;
+  }
+
+  50% {
+    background-color: #fff;
+    box-shadow: 0 35px 25px -30px $color_primary inset;
+  }
+
+  100% {
+    background-color: $color_secondary;
+    box-shadow: 0 50px 25px -30px $color_primary inset;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
