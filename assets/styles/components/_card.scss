@@ -1,7 +1,9 @@
 .card {
   @include elevation();
   position: relative;
+  width: 300px;
   overflow: hidden;
+  margin-bottom: spacing(2);
   border-radius: 15px;
   background-color: $color_background_paper;
 

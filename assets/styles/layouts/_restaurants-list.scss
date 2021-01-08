@@ -1,0 +1,12 @@
+.restaurants-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: spacing(4, 2);
+  background-color: $color_background_alternative;
+
+  h2 {
+    align-self: flex-start;
+    margin-bottom: spacing(3);
+  }
+}
