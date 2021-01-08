@@ -1,11 +1,6 @@
 @mixin list-style-image($image) {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 11px;
-  background-image: url("#{$pathToSvg}/#{$image}.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  list-style-image: url("#{$pathToSvg}/#{$image}.svg");
+  margin-left: 18px;
 }
 
 .nav {
@@ -19,12 +14,12 @@
         margin-bottom: spacing(.5);
       }
 
-      &:nth-child(1):before {
-        @include list-style-image(utensils);
+      &:nth-child(1) {
+        @include list-style-image("utensils");
       }
 
-      &:nth-child(2):before {
-        @include list-style-image(hands-helping);
+      &:nth-child(2) {
+        @include list-style-image("hands-helping");
       }
     }
   }
