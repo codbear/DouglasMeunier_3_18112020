@@ -7,8 +7,6 @@
   background-color: $color_background_paper;
 
   &:hover {
-    cursor: pointer;
-
     @media (prefers-reduced-motion: no-preference) {
       img {
         transform: scale(1.03);

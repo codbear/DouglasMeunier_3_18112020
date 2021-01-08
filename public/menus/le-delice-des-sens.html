@@ -2,152 +2,25 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Oh my food</title>
+    <title>Oh my food - Le délice des sens</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="../dist/style.css">
 </head>
 <body>
 <header class="header">
+    <button class="button button--go-back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/>
+            </svg>
+        </a>
+    </button>
     <h1 class="heading heading--1">
         ohmyfood
     </h1>
 </header>
 <main class="content">
-    <div class="content_loading">
-        <span class="loader"></span>
-    </div>
-    <div class="content_loaded">
-        <aside class="location">
-            <p>Paris, Bellevile</p>
-        </aside>
-        <section class="hero">
-            <h2 class="heading heading--2">Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="button button--action">Explorer nos restaurants</button>
-        </section>
-        <section class="home-section home-section--user-manual">
-            <h2 class="home-section_title">Fonctionnement</h2>
-            <div class="home-section_grid">
-                <button class="home-section_grid_item button step">
-                    <span class="step_number">1</span>
-                    <svg class="step_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-                        <path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/>
-                    </svg>
-                    Choisissez un restaurant
-                </button>
-                <button class="home-section_grid_item button step">
-                    <span class="step_number">2</span>
-                    <svg class="step_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-                        <path d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/>
-                    </svg>
-                    Composez votre menu
-                </button>
-                <button class="home-section_grid_item button step">
-                    <span class="step_number">3</span>
-                    <svg class="step_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 616 512">
-                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-                        <path d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"/>
-                    </svg>
-                    Dégustez au restaurant
-                </button>
-            </div>
-        </section>
-        <section class="home-section home-section--restaurants-list">
-            <h2 class="home-section_title">Restaurants</h2>
-            <div class="home-section_grid">
-                <article class="home-section_grid_item card card--restaurant card--new">
-                    <div class="card_image">
-                        <img src="img/la-palette-du-gout.jpg" alt="">
-                    </div>
-                    <div class="card_content">
-                        <h3 class="heading heading--3">
-                            <a href="./menus/la-palette-du-gout.html">La palette du goût</a>
-                        </h3>
-                        <p>Ménilmontant</p>
-                    </div>
-                    <button class="button fav-button">
-                        <svg class="fav-button_negative" viewBox="0 0 512 512">
-                            <path
-                                    d="M0,1V513H512V1ZM466.69,270.79l-189,195.12a30.63,30.63,0,0,1-44.24,0l-189-195.12c-54.88-56.73-51.66-150.68,9.67-203,53.51-45.6,133.2-37.4,182.22,13.28l19.24,19.82L274.9,81.05C324,30.37,403.61,22.17,457.12,67.77,518.45,120.11,521.67,214.06,466.69,270.79Z"
-                                    transform="translate(0 -1)"/>
-                        </svg>
-                        <svg class="fav-button_border" viewBox="0 0 512 512">
-                            <path
-                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
-                        </svg>
-                    </button>
-                </article>
-                <article class="home-section_grid_item card card--restaurant card--new">
-                    <div class="card_image">
-                        <img src="img/la-note-enchantee.jpg" alt="">
-                    </div>
-                    <div class="card_content">
-                        <h3 class="heading heading--3">
-                            <a href="./menus/la-note-enchantee.html">La note enchantée</a>
-                        </h3>
-                        <p>Charonne</p>
-                    </div>
-                    <button class="button fav-button">
-                        <svg class="fav-button_negative" viewBox="0 0 512 512">
-                            <path
-                                    d="M0,1V513H512V1ZM466.69,270.79l-189,195.12a30.63,30.63,0,0,1-44.24,0l-189-195.12c-54.88-56.73-51.66-150.68,9.67-203,53.51-45.6,133.2-37.4,182.22,13.28l19.24,19.82L274.9,81.05C324,30.37,403.61,22.17,457.12,67.77,518.45,120.11,521.67,214.06,466.69,270.79Z"
-                                    transform="translate(0 -1)"/>
-                        </svg>
-                        <svg class="fav-button_border" viewBox="0 0 512 512">
-                            <path
-                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
-                        </svg>
-                    </button>
-                </article>
-                <article class="home-section_grid_item card card--restaurant card--new">
-                    <div class="card_image">
-                        <img src="img/a-la-francaise.jpg" alt="">
-                    </div>
-                    <div class="card_content">
-                        <h3 class="heading heading--3">
-                            <a href="./menus/a-la-francaise.html">À la française</a>
-                        </h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                    <button class="button fav-button">
-                        <svg class="fav-button_negative" viewBox="0 0 512 512">
-                            <path
-                                    d="M0,1V513H512V1ZM466.69,270.79l-189,195.12a30.63,30.63,0,0,1-44.24,0l-189-195.12c-54.88-56.73-51.66-150.68,9.67-203,53.51-45.6,133.2-37.4,182.22,13.28l19.24,19.82L274.9,81.05C324,30.37,403.61,22.17,457.12,67.77,518.45,120.11,521.67,214.06,466.69,270.79Z"
-                                    transform="translate(0 -1)"/>
-                        </svg>
-                        <svg class="fav-button_border" viewBox="0 0 512 512">
-                            <path
-                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
-                        </svg>
-                    </button>
-                </article>
-                <article class="home-section_grid_item card card--restaurant card--new">
-                    <div class="card_image">
-                        <img src="img/le-delice-des-sens.jpg" alt="">
-                    </div>
-                    <div class="card_content">
-                        <h3 class="heading heading--3">
-                            <a href="./menus/le-delice-des-sens.html">Le délice des sens</a>
-                        </h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <button class="button fav-button">
-                        <svg class="fav-button_negative" viewBox="0 0 512 512">
-                            <path
-                                    d="M0,1V513H512V1ZM466.69,270.79l-189,195.12a30.63,30.63,0,0,1-44.24,0l-189-195.12c-54.88-56.73-51.66-150.68,9.67-203,53.51-45.6,133.2-37.4,182.22,13.28l19.24,19.82L274.9,81.05C324,30.37,403.61,22.17,457.12,67.77,518.45,120.11,521.67,214.06,466.69,270.79Z"
-                                    transform="translate(0 -1)"/>
-                        </svg>
-                        <svg class="fav-button_border" viewBox="0 0 512 512">
-                            <path
-                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
-                        </svg>
-                    </button>
-                </article>
-            </div>
-        </section>
-    </div>
 </main>
 <footer class="footer">
     <svg class="brand-logo brand-logo--on-dark-background"
