@@ -1,0 +1,23 @@
+.home-section {
+  padding: spacing(4, 2);
+
+  &--restaurants-list {
+    background-color: $color_background_alternative;
+  }
+
+  &_title {
+    align-self: flex-start;
+    margin-bottom: spacing(3);
+  }
+
+  &_grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    &_item {
+      margin: spacing(0, 3, 3, 3);
+    }
+  }
+}
