@@ -1,0 +1,14 @@
+.screen--menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  background: no-repeat top url("#{$pathToImg}/a-la-francaise.jpg");
+  background-size: contain;
+
+  .header {
+    background-color: $color_background_paper;
+  }
+}
