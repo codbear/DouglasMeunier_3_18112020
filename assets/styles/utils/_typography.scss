@@ -1,0 +1,34 @@
+.typography {
+  color: $color_text_default;
+  margin: 0;
+
+  &--h1 {
+    @include font_shrikhand;
+    font-size: sizing(XL);
+    font-weight: bold;
+  }
+
+  &--h2 {
+    font-size: sizing(L);
+    font-weight: bold;
+  }
+
+  &--h3 {
+    font-size: sizing(L);
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &--h4 {
+    font-weight: bold;
+  }
+
+  &--h5 {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &--h6 {
+    font-weight: normal;
+  }
+}
