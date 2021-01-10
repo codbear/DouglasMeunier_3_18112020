@@ -15,6 +15,10 @@
   @return duration($duration) ease-out 3s forwards displayContent;
 }
 
+@function displayDishes($i) {
+  @return displayDishes duration(complex) #{$i * 150}ms linear forwards;
+}
+
 @function fillWithGradient($duration: 'basic') {
   @return fillWithGradient duration($duration) ease-in forwards;
 }
@@ -90,5 +94,15 @@
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes displayDishes {
+  50% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
