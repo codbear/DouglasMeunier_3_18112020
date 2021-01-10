@@ -5,7 +5,7 @@
           shorter: 200ms,
           short: 250ms,
           basic: 300ms,
-          complex: 375ms,
+          complex: 400ms,
   );
 
   @return map-get($durations, $duration);

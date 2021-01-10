@@ -1,0 +1,31 @@
+.screen--menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+
+  &--la-palette-du-gout {
+    background-image: url("#{$pathToImg}/la-palette-du-gout.jpg");
+  }
+
+  &--le-delice-des-sens {
+    background-image: url("#{$pathToImg}/le-delice-des-sens.jpg");
+  }
+
+  &--la-note-enchantee {
+    background-image: url("#{$pathToImg}/la-note-enchantee.jpg");
+  }
+
+  &--a-la-francaise {
+    background-image: url("#{$pathToImg}/a-la-francaise.jpg");
+  }
+
+  .header {
+    background-color: $color_background_paper;
+  }
+}

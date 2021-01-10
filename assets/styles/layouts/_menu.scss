@@ -1,0 +1,79 @@
+.menu {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: spacing(20);
+  padding: spacing(5, 0);
+  border-radius: 55px 55px 0 0;
+  justify-content: space-around;
+  background-color: $color_background_alternative;
+
+  &_header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    &_title {
+      margin-left: spacing(3);
+      align-self: center;
+      font-size: sizing(XL);
+    }
+
+    .fav-button {
+      align-self: center;
+      justify-self: center;
+      background-color: $color_background_alternative;
+    }
+  }
+
+  &_wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: spacing(2);
+
+    @media (break-up(md)) {
+      flex-flow: row wrap;
+    }
+
+    &_sub {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      margin: auto;
+      padding: spacing(2);
+
+      @media (break-up(sm)) {
+        max-width: 70%;
+      }
+
+      @media (break-up(md)) {
+        max-width: 33%;
+      }
+
+      &_title {
+        margin-left: spacing(1);
+
+        &::after {
+          content: '';
+          display: block;
+          width: 50px;
+          height: 3px;
+          margin: spacing(.5, 0, 2, 0);
+          border-bottom: 3px solid $color_divider_contrasted;
+        }
+      }
+
+      .dish {
+        margin: auto;
+
+        &:not(:last-child) {
+          margin-bottom: spacing(2);
+        }
+      }
+    }
+  }
+
+  .button--action {
+    width: 200px;
+    margin: spacing(5, auto);
+  }
+}

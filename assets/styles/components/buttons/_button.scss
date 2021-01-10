@@ -2,6 +2,7 @@
   border: none;
   cursor: pointer;
   font-size: sizing(M);
+  background-color: unset;
 
   &--action {
     @include elevation();
@@ -13,5 +14,9 @@
     &:hover {
       background: linear-gradient(lighten($color_secondary, 5%), lighten($color_primary, 5%));
     }
+  }
+
+  &--go-back {
+    width: 25px;
   }
 }

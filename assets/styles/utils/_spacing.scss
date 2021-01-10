@@ -5,8 +5,9 @@
   @each $space in $spaces {
 
     @if ($space) {
-
-      @if ($space > 0) {
+      @if ($space == 'auto') {
+        $sizes: append($sizes, $space, $separator);
+      } @else if ($space > 0) {
         $size: #{$space * 8}px;
         $sizes: append($sizes, $size, $separator);
       } @else if ($space == 0) {

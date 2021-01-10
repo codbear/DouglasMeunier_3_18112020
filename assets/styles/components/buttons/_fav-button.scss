@@ -17,7 +17,6 @@
   &::before {
     @include favButtonElementsPosition;
     content: "";
-    background-color: $color_background_paper;
   }
 
   &:active {
@@ -34,5 +33,11 @@
   &_border {
     @include favButtonElementsPosition;
     @include hideOnClick('shorter');
+  }
+
+  &--alternative {
+    .fav-button_negative {
+      fill: $color_background_alternative;
+    }
   }
 }
