@@ -2,11 +2,23 @@
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: spacing(20);
+  margin-top: 130px;
   padding: spacing(5, 0);
   border-radius: 55px 55px 0 0;
   justify-content: space-around;
   background-color: $color_background_alternative;
+
+  @media (break-up(xs)) {
+    margin-top: 180px;
+  }
+
+  @media (break-up(sm)) {
+    margin-top: 300px;
+  }
+
+  @media (break-up(md)) {
+    margin-top: 400px;
+  }
 
   &_header {
     display: grid;
@@ -28,6 +40,7 @@
   &_wrapper {
     display: flex;
     flex-flow: column nowrap;
+    align-items: flex-start;
     padding-top: spacing(2);
 
     @media (break-up(md)) {
@@ -38,7 +51,7 @@
       display: flex;
       flex-flow: column nowrap;
       width: 100%;
-      margin: auto;
+      margin: spacing(0, auto);
       padding: spacing(2);
 
       @media (break-up(sm)) {

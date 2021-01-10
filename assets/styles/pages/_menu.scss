@@ -1,13 +1,13 @@
 .screen--menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: scroll;
   background-repeat: no-repeat;
-  background-position: top;
+  background-attachment: fixed;
+  background-position: top 68px left 0;
   background-size: contain;
+
+  @media (break-up(sm)) {
+    background-size: cover;
+    background-position: center -68px;
+  }
 
   &--la-palette-du-gout {
     background-image: url("#{$pathToImg}/la-palette-du-gout.jpg");
@@ -26,6 +26,8 @@
   }
 
   .header {
+    position: sticky;
+    top: 0;
     background-color: $color_background_paper;
   }
 }
