@@ -6,6 +6,8 @@ $font-size: (
         XXL: 3rem,
 );
 
+$header-height: 68px;
+
 @function sizing($size) {
   @return map-get($font-size, $size);
 }

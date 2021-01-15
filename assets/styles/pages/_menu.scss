@@ -1,12 +1,12 @@
 .screen--menu {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top 68px left 0;
+  background-position: top $header-height left 0;
   background-size: contain;
 
   @media (break-up(sm)) {
     background-size: cover;
-    background-position: center -68px;
+    background-position: center -#{$header-height};
   }
 
   &--la-palette-du-gout {
