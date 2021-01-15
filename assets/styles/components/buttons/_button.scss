@@ -6,17 +6,23 @@
 
   &--action {
     @include elevation();
+    display: block;
     background: linear-gradient($color_secondary, $color_primary);
     padding: spacing(2, 3);
     color: $color_text_onPrimaryBackground;
     border-radius: 55px;
 
-    &:hover {
+    &:hover, &:focus {
       background: linear-gradient(lighten($color_secondary, 5%), lighten($color_primary, 5%));
     }
   }
 
   &--go-back {
     width: 25px;
+    transition: easeInOut();
+
+    &:focus {
+      transform: scale(1.5);
+    }
   }
 }

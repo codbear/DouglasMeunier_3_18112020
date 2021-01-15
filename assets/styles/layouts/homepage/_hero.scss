@@ -4,7 +4,8 @@
   background-color: $color_background_alternative;
   text-align: center;
 
-  .button {
-    margin-top: spacing(2);
+  .button--action {
+    width: 230px;
+    margin: spacing(2, auto, 0, auto);
   }
 }
