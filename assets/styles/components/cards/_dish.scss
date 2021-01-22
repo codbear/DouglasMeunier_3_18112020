@@ -17,18 +17,6 @@ $dish-added-block-width: 60px;
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    transform: translateY(50px);
-    opacity: 0;
-
-    @for $i from 1 through 4 {
-      &:nth-child(#{$i}) {
-        transform: translateY(50px);
-        animation: displayDishes($i);
-      }
-    }
-  }
-
   &:hover {
     cursor: pointer
   }
