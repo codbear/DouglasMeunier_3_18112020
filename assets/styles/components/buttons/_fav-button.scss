@@ -19,7 +19,7 @@
     content: "";
   }
 
-  &:active {
+  &:hover {
     &::before {
       animation: fillWithGradient('short');
     }
@@ -32,7 +32,7 @@
 
   &_border {
     @include favButtonElementsPosition;
-    @include hideOnClick('shorter');
+    @include hide('shorter');
   }
 
   &--alternative {

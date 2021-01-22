@@ -39,10 +39,10 @@
   @return all duration($duration) ease-in-out;
 }
 
-@mixin hideOnClick($duration: 'basic') {
+@mixin hide($duration: 'basic') {
   transition: opacity duration($duration) ease-in;
 
-  &:active {
+  &:hover {
     opacity: 0;
   }
 }
